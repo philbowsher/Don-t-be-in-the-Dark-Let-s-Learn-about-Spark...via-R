@@ -1,0 +1,229 @@
+---
+title: "Don't be in the Dark, Let's Learn about Spark...via R"
+author: "Phil Bowsher"
+date: "9/28/2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Resources:
+
+https://beta.rstudioconnect.com/content/3046/Sparklyr_Resources.html
+
+https://github.com/philbowsher/Don-t-be-in-the-Dark-Let-s-Learn-about-Spark...via-R
+
+## My History
+
+2014-2015 Genomics Analysis
+
+- AWS
+
+- PhDs that know R
+
+- Needed a way to write R code for fast large-scale/distributed data processing
+
+https://www.researchgate.net/publication/283020475_Classification_of_multi-genomic_data_using_MapReduce_paradigm
+
+https://www.researchgate.net/publication/308806669_Genome_Data_Analysis_Using_MapReduce_Paradigm
+
+## Objective of Presentation
+
+Intro to Sparklyr, a R "dplyr back-end" package that provides an interface between R and Apache Spark
+
+- Lite History lesson
+- Getting up and running in local mode on Windows
+- Examples
+- Cluster Mode Archtecture
+
+## Apache Hadoop
+
+An open-source software framework used for distributed storage and processing of dataset of big data using the MapReduce programming model.
+
+The core of Apache Hadoop consists of a storage part, known as Hadoop Distributed File System (HDFS), and a processing part which is a MapReduce programming model. 
+
+## Apache Hadoop Cont.
+
+Hadoop splits files into large blocks and distributes them across nodes in a cluster. The four modules: Hadoop Common, Hadoop Distributed File System (HDFS), Hadoop YARN, Hadoop MapReduce. Map Reduce Pardigm, simplified data processing on Large Clusters and splits computations in map and reduce phase.
+
+- "Google File System" paper that was published in October 2003.
+
+- Hadoop 0.1.0 was released in April 2006.
+
+https://en.wikipedia.org/wiki/Apache_Hadoop
+
+## Apache Spark
+
+Apache Spark™ is a fast and general engine for large-scale data processing, with support for in-memory datasets. Spark runs on Hadoop, Mesos, standalone, or in the cloud.
+
+- https://spark.apache.org/
+
+- Developed at the University of California, Berkeley's AMPLab, the Spark codebase was later donated to the Apache Software Foundation, which has maintained it since
+
+- Data structure called the resilient distributed dataset (RDD)
+
+- Spark uses Mapreduce model for processing data in a parallel way across hundreds to thousands of machines
+
+https://en.wikipedia.org/wiki/Apache_Spark
+
+## Apache Spark Cont.
+
+Spark SQL is a component on top of Spark Core that introduced a data abstraction called DataFrames.
+
+- Started by Matei Zaharia at UC Berkeley's AMPLab in 2009, and open sourced in 2010
+
+- In 2013, the project was donated to the Apache Software Foundation and switched its license to Apache 2.0
+
+- Spark founder M. Zaharia's company Databricks
+
+- http://blog.madhukaraphatak.com/history-of-spark/
+
+- https://medium.com/@markobonaci/the-history-of-hadoop-68984a11704
+
+- https://databricks.com/blog/2014/01/21/spark-and-hadoop.html
+
+## Spark Programming
+
+Spark is written in Scala and natively provides support for a variety of languages. At a high level, every Spark application consists of a driver program that runs the user’s main function and executes various parallel operations on a cluster. The main abstraction Spark provides is a resilient distributed dataset (RDD), which is a collection of elements partitioned across the nodes of the cluster that can be operated on in parallel.
+
+
+- https://spark.apache.org/docs/1.5.1/programming-guide.html
+- https://blog.cloudera.com/blog/2014/03/apache-spark-a-delight-for-developers/
+
+## MLlib
+
+MLlib is Spark’s machine learning (ML) library. Its goal is to make practical machine learning scalable and easy.
+
+- http://spark.apache.org/docs/latest/ml-guide.html
+
+## Sparkr
+
+SparkR started as a research project at AMPLab. With release of Spark 1.4.0, SparkR was inlined in Apache Spark. At that time Databricks released R Notebooks to be the first company that officially supports SparkR. To further facilitate usage of SparkR, Databricks R notebooks imported SparkR by default and provided a working sqlContext object.
+
+- https://docs.databricks.com/spark/latest/sparkr/overview.html
+- https://databricks.com/blog/2015/06/09/announcing-sparkr-r-on-spark.html
+- https://spark.apache.org/docs/2.1.0/quick-start.html
+
+## Sparklyr
+
+Sparklyr 0.4.0
+
+First release to CRAN on 2016-09-27.
+
+- https://cran.r-project.org/web/packages/sparklyr/news.html
+- https://github.com/rstudio/sparklyr/blob/master/NEWS.md
+- https://blog.rstudio.com/2016/09/27/sparklyr-r-interface-for-apache-spark/
+- https://github.com/rstudio/sparklyr/
+
+## Sparklyr, Easy to use R with Spark
+
+- My biggest take away, makes getting up and running with Spark very easy.
+- Up and running on windows in 10-20 mins.
+- Fully integrated with the RStudio IDE - Connections Tab
+- Can be used with R Markdown, Notebooks and Shiny apps
+- Use Spark ML to analyze your data
+- On Cran and can be installed using install.packages
+
+## dplyr backend
+
+Sparklyr is a dplyr back-end for Spark
+
+dplyr is an R package for working with structured data both in and outside of R. dplyr makes data manipulation for R users easy, consistent, and performant. Sparklyr provides a dplyr interface to Spark DataFrames.
+
+- https://spark.rstudio.com/articles/guides-dplyr.html
+
+Will translate R code into Spark SQL
+
+## Local Mode
+
+- Local — Working on a local desktop typically with smaller/sampled datasets
+
+- https://spark.rstudio.com/articles/deployment-overview.html
+
+## Windows Setup "You can do it"
+
+1. Installed R 3.4.1
+2. Installed Tidyverse 1.1.1 & Installed devtools 1.13.3
+3. Installed Preview of RStudio IDE *Did this for the connections tab updates in preview currently as of 9/28/17
+4. devtools::install_github("rstudio/sparklyr")
+5. Used Connections tab to connect:
+
+Installed java 
+
+Installed spark-2.1.0/hadoop 2.7 by calling:
+
+spark_install(version = "2.1.0", hadoop_version = "2.7")
+
+Took 10-15mins total
+
+## Windows Setup Resources
+
+https://yokekeong.com/running-apache-spark-with-sparklyr-and-r-in-windows/
+
+https://spark.rstudio.com/
+
+https://edumine.wordpress.com/2015/06/11/how-to-install-apache-spark-on-a-windows-7-environment/
+
+## If the SparkUI won't open via the IDE, then you can do:
+
+Open CMD and do:
+
+```{r eval=FALSE, echo=T}
+
+- cd C:\Users\yourname\AppData\Local\spark\spark-2.1.0-bin-hadoop2.7\bin
+
+Run the command spark-shell
+
+And view the log via:
+
+C:\Users\yourname\AppData\Local\Temp\RtmpU34mZI
+
+sparklyr application UI via:
+  
+http://localhost:4040
+
+```
+
+https://spark.apache.org/docs/1.4.1/spark-standalone.html
+
+https://github.com/rstudio/sparklyr/issues/295
+
+## Demo via R Notebooks
+
+- Code 
+- https://beta.rstudioconnect.com/content/2371/r-and-spark.html#4
+
+## Cluster Mode
+
+Cluster — Working directly within or alongside a Spark cluster (standalone, YARN, Mesos, etc.)
+
+- Spark on top of hadoop
+- RStudio Server on Edge Node
+
+http://rpubs.com/jluraschi/billion-tags
+
+## Archtecture
+
+https://spark.rstudio.com/articles/deployment-amazon-emr.html
+https://spark.rstudio.com/articles/deployment-data-lakes.html
+## Extensions
+
+User generated packages for doing specific tasks...like reading in SAS data in parallel into Apache Spark
+
+Since Spark is a general-purpose cluster computing system there are many other R interfaces that could be built (e.g. interfaces to custom machine learning pipelines, interfaces to 3rd party Spark packages, etc.).
+
+The facilities used internally by sparklyr for its dplyr and machine learning interfaces are available to extension packages. This guide describes how you can use these tools to create your own custom R interfaces to Spark.
+
+https://spark.rstudio.com/articles/guides-extensions.html
+https://github.com/bnosac/spark.sas7bdat
+
+## Other
+
+- https://spark.rstudio.com/articles/guides-distributed-r.html
+- https://spark.rstudio.com/articles/deployment-connections.html
+- https://spark.rstudio.com/articles/guides-caching.html
+- https://support.rstudio.com/hc/en-us/community/posts/223212947-Sparklyr-support-for-Spark-Streaming-
+- https://github.com/rstudio/sparklyr/issues/12
+

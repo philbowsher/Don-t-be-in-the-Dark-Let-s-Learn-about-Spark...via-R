@@ -1,0 +1,376 @@
+---
+title: "Sparklyr Resources"
+author: "Phil Bowsher"
+date: "9/28/2017"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+## Intro:
+
+https://spark.apache.org/docs/1.5.1/programming-guide.html
+
+https://acadgild.com/blog/sparklyr-r-interface-for-apache-spark/
+
+https://beta.rstudioconnect.com/content/2371/r-and-spark.html#1
+
+http://rpubs.com/jluraschi/billion-tags
+
+http://rpubs.com/jluraschi/sparklyr-intro-class
+
+http://www.viennar.org/slides/boubela_sparklyr.pdf
+
+http://r-addict.com/DataScienceWarsaw25/show/#/
+
+http://datafeedtoolbox.com/how-to-setup-sparklyr-an-r-interface-for-apache-spark/
+
+https://cascadiarconf.com/talks/zongo_kalbi.pdf
+
+http://www.coppelia.io/2016/12/spark-and-r/
+
+https://github.com/rstudio/sparklyr
+
+https://cran.r-project.org/web/packages/sparklyr/index.html
+
+http://www.i-programmer.info/news/98-languages/10200-sparklyr-an-r-interface-for-spark.html
+
+http://www.tensorflowhub.org/2017/08/using-sparklyr-package-in-r.html
+
+https://www.meetup.com/Data-Science-ATL/events/234481680/
+
+https://alexioannides.com/2016/08/22/building-a-data-science-platform-for-rd-part-3-r-r-studio-server-sparkr-sparklyr/
+
+## R Notebooks
+
+https://beta.rstudioconnect.com/content/1438/flightsAnalysis.nb.html
+
+*Download at the top right
+
+## Examples:
+
+http://minimaxir.com/2017/01/amazon-spark/
+
+http://minimaxir.com/notebooks/amazon-spark/
+
+http://rpubs.com/edgarruiz/204871
+
+https://spark.rstudio.com/examples.html
+
+https://beta.rstudioconnect.com/content/1518/notebook-classification.html
+
+https://spark.rstudio.com/examples.html
+
+http://blog.revolutionanalytics.com/2016/12/taxi-mrs-spark.html
+
+https://beta.rstudioconnect.com/content/1438/flightsAnalysis.nb.html
+
+https://docs.microsoft.com/en-us/machine-learning-server/r/tutorial-sparklyr-revoscaler
+
+http://www.win-vector.com/blog/2017/06/managing-intermediate-results-when-using-rsparklyr/
+
+https://longhowlam.wordpress.com/2017/02/15/r-formulas-in-spark-and-un-nesting-data-in-sparklyr-nice-and-handy/
+
+https://rstudio-pubs-static.s3.amazonaws.com/244135_7fdd3eb63ef24e62be0e037e293ac95f.html
+
+http://www.win-vector.com/blog/2017/08/why-to-use-the-replyr-r-package/
+
+https://mapr.com/blog/scalable-ml-sparkr-h2o/
+
+## Webinars:
+
+https://www.rstudio.com/resources/webinars/introducing-an-r-interface-for-apache-spark/
+
+https://www.rstudio.com/resources/webinars/using-spark-with-shiny-and-r-markdown/
+
+https://www.rstudio.com/resources/videos/r-and-spark/
+
+https://www.rstudio.com/resources/webinars/working-with-big-data-in-r/
+
+http://www.stat.wvu.edu/~jharner/courses/buda515/videos/sparklyr.mp4
+
+## Windows:
+
+https://yokekeong.com/running-apache-spark-with-sparklyr-and-r-in-windows/
+
+https://spark.rstudio.com/
+
+https://edumine.wordpress.com/2015/06/11/how-to-install-apache-spark-on-a-windows-7-environment/
+
+https://spark.apache.org/docs/1.4.1/spark-standalone.html
+
+https://github.com/rstudio/sparklyr/issues/295
+
+https://discuss.analyticsvidhya.com/t/facing-difficulty-while-installing-sparklyr-in-rstudio-3-3-1/12661/3
+
+*didn't do this
+https://stackoverflow.com/questions/40642348/install-spark-on-windows-for-sparklyr
+
+## Tensorflow:
+
+https://www.meetup.com/Data-Science-Milan/events/239207752/
+
+http://datasciencemilan.org/2017/05/25/tensorflow-and-sparklyr-scaling-deep-learning-and-r-to-the-big-data-ecosystem/
+
+## Yarn:
+
+https://spark.rstudio.com/examples-cdh.html
+
+https://spark.rstudio.com/implement-yarn.html
+
+https://www.nodalpoint.com/sparklyr-on-yarn/
+
+https://spark.rstudio.com/articles/deployment-connections.html
+
+## Shiny:
+
+https://beta.rstudioconnect.com/content/1439/
+
+https://www.rstudio.com/resources/webinars/using-spark-with-shiny-and-r-markdown/
+
+## Google Cloud:
+
+https://www.jasperginn.nl/using-rstudio-and-sparklyr-with-a-google-dataproc-cluster/
+
+## Cloudera:
+
+https://vimeo.com/201183158
+
+http://blog.cloudera.com/blog/2017/09/how-to-distribute-your-r-code-with-sparklyr-and-cdsw/
+
+https://spark.rstudio.com/examples-cdh.html
+
+https://blog.cloudera.com/blog/2016/09/introducing-sparklyr-an-r-interface-for-apache-spark/
+
+https://blog.cloudera.com/blog/2017/02/analyzing-us-flight-data-on-amazon-s3-with-sparklyr-and-apache-spark-2-0/
+
+https://medium.com/@bkvarda/sparklyr-r-interface-for-spark-and-kerberos-on-cloudera-80abf5f6b4ad
+
+https://blog.cloudera.com/blog/2016/12/automating-your-sparklyr-environment-with-cloudera-director/
+
+## H2O:
+
+https://cran.r-project.org/web/packages/rsparkling/rsparkling.pdf
+
+https://github.com/h2oai/rsparkling
+
+https://spark.rstudio.com/h2o.html
+
+https://dzone.com/articles/spark-with-h2o-using-rsparkling-and-sparklyr-in-r
+
+https://aichamp.wordpress.com/2017/06/19/spark-with-h2o-using-rsparkling-and-sparklyr-in-r/
+
+https://aichamp.wordpress.com/2017/05/28/starter-script-for-rsparkling-h2o-on-spark-with-r/
+
+https://stackoverflow.com/questions/42227531/sparklyr-rsparkling-error-while-connecting-to-a-cluster
+
+https://www.meetup.com/San-Francisco-Big-Data-Science/events/240399849/
+
+https://github.com/h2oai/rsparkling/blob/master/inst/examples/nycflights13.R
+
+https://github.com/h2oai/rsparkling/issues/49
+
+https://github.com/h2oai/rsparkling/blob/master/inst/examples/using-sparkling-water-in-YARN.md
+
+https://www.youtube.com/watch?v=SQYg3pUTLMY
+
+## ML:
+
+http://rstudio.github.io/sparklyr/reference/ml_options.html
+
+https://beta.rstudioconnect.com/content/1518/notebook-classification.html
+
+https://www.hdd.world/blog/2017/07/08/deep-learning-with-r-keras/
+
+https://spark.rstudio.com/mllib.html
+
+## Cluster:
+
+https://beta.rstudioconnect.com/content/1446/sparkClusterDemo.html
+
+## Deployment:
+
+https://spark.rstudio.com/articles/deployment-overview.html
+
+https://qubole.zendesk.com/hc/en-us/articles/115002396146-How-To-Install-Sparklyr-package-on-a-Cluster
+
+https://spark.rstudio.com/examples-emr.html
+
+## AWS:
+
+https://aws.amazon.com/blogs/big-data/running-sparklyr-rstudios-r-interface-to-spark-on-amazon-emr/
+
+https://spark.rstudio.com/examples-emr.html
+
+https://edgarsdatalab.com/2016/08/31/sparklyr-spark-2-0-aws/
+
+http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hadoop-script.html
+
+## Azure:
+
+http://blog.revolutionanalytics.com/2016/10/tutorial-scalable-r-on-spark.html
+
+https://blogs.msdn.microsoft.com/microsoftrservertigerteam/2017/04/19/new-features-in-9-1-microsoft-r-server-with-sparklyr-interoperability/
+
+http://www.dataarchitect.cloud/data-manipulation-with-sparklyr-on-azure-hdinsight/
+
+http://blog.revolutionanalytics.com/2016/11/data-manipulation-with-sparklyr-on-azure-hdinsight.html
+
+https://blogs.msdn.microsoft.com/uk_faculty_connection/2016/11/23/provisioning-an-hdinsight-spark-cluster/
+
+http://www.dataarchitect.cloud/data-manipulation-with-sparklyr-on-azure-hdinsight/
+
+## Course:
+
+https://www.datacamp.com/courses/introduction-to-spark-in-r-using-sparklyr
+
+https://www.rstudio.com/conference/
+
+## Distributing R Computations:
+
+https://spark.rstudio.com/articles/guides-distributed-r.html
+
+## UDFs:
+
+https://github.com/rstudio/sparklyr/issues/81
+
+https://blog.cloudera.com/blog/2017/02/working-with-udfs-in-apache-spark/
+
+https://github.com/rstudio/sparklyr/issues/120
+
+## Extensions:
+
+http://r-addict.com/2016/08/25/Extending-Sparklyr.html
+
+https://spark.rstudio.com/extensions.html
+
+https://github.com/bnosac/spark.sas7bdat
+
+https://github.com/kevinykuo/sparklygraphs
+
+## Extra:
+
+https://gist.github.com/nwstephens/86790a69a4b09bbbd7d80835570f5ee9
+
+## Updates:
+
+https://blog.rstudio.com/2017/07/31/sparklyr-0-6/
+
+https://blog.rstudio.com/2017/01/24/sparklyr-0-5/
+
+https://github.com/rstudio/sparklyr/blob/master/NEWS.md
+
+https://cran.r-project.org/web/packages/sparklyr/news.html
+
+## Cheatsheets:
+
+https://spark.rstudio.com/images/sparklyr-cheatsheet.pdf
+
+## Presentations:
+
+https://www.slideshare.net/SparkSummit/r-and-spark-how-to-analyze-data-using-rstudios-sparklyr-and-h2os-rsparkling-packages-spark-summit-east-talk-by-nathan-stephens
+
+https://spark.rstudio.com/images/RStudio%20sparklyr%20Strata%20Hadoop.pdf
+
+https://www.meetup.com/it-IT/Data-Science-Milan/events/239207752/
+
+https://www.meetup.com/Data-Science-ATL/events/234481680/
+
+https://github.com/jimcrozier/fars_data
+
+https://github.com/trestletech/user2016-sparklyr/blob/master/sparklyr-user2016.pdf
+
+https://www.brighttalk.com/webcast/12641/260345/scalable-data-science-with-spark-r-rstudio-sparklyr
+
+https://www.meetup.com/it-IT/Data-Science-Milan/events/239207752/
+
+https://github.com/rstudio/sparkDemos
+
+https://spark-summit.org/east-2017/events/r-and-spark-how-to-analyze-data-using-rstudios-sparklyr-and-h2os-rsparkling-packages/
+
+https://www.youtube.com/watch?v=oItFZfzqqMY&feature=youtu.be
+
+https://www.slideshare.net/0xdata/sparklyr-jeff-allen
+
+https://odsc.com/training/portfolio/spark-r-sparklyr
+
+https://r-podcast.org/episode/20-more-interviews-from-rstudioconf-with-javier-luraschi-and-garrett-grolemund/
+
+## Livy:
+
+https://github.com/rstudio/sparklyr/pull/478
+
+https://spark.rstudio.com/articles/guides-distributed-r.html
+
+## Notes:
+
+https://github.com/rstudio/sparklyr/pull/478
+
+https://github.com/rstudio/sparklyr/issues/120
+
+https://stackoverflow.com/questions/39494484/sparkr-vs-sparklyr
+
+https://github.com/rstudio/sparklyr/commit/1b0d464cba93f2624e0592528d2ea6bf91c19f43
+
+https://github.com/rstudio/sparklyr/issues/81
+
+## Interesting:
+
+https://hub.docker.com/r/akhilnairamey/sparklyr/
+
+https://github.com/rzilla/dplyr.spark.hive
+
+http://datascience.la/benchmarking-random-forest-implementations/
+
+https://issues.apache.org/jira/browse/SPARK-13434
+
+https://issues.apache.org/jira/browse/SPARK-3162
+
+https://github.com/apache/spark/pull/14872/files
+
+https://support.rstudio.com/hc/en-us/community/posts/202767523-Fail-to-install-rstudio-in-a-centos-docker-with-Spark-etc
+
+https://github.com/rstudio/sparklyr/issues/407
+
+https://github.com/rstudio/sparklyr/issues/505
+
+https://github.com/rstudio/sparklyr/issues/252
+
+https://github.com/rstudio/sparklyr/issues/525
+
+https://stackoverflow.com/questions/41025094/sparklyr-removing-a-table-from-spark-context
+
+https://github.com/rstudio/sparklyr/issues/984
+
+https://github.com/rstudio/sparklyr/issues/977
+
+https://github.com/rstudio/sparklyr/issues/978
+
+https://blog.exploratory.io/how-to-access-to-your-spark-from-exploratory-with-sparklyr-sql-version-e4aea2f8b0f
+
+https://stackoverflow.com/questions/39757500/how-may-i-connect-google-dataproc-cluster-from-sparklyr
+
+http://www.win-vector.com/blog/tag/sparklyr/
+
+https://aitopics.org/tag/sparklyr
+
+https://community.tibco.com/questions/terr-compatibility-r-sparklyr-package
+
+https://github.com/rstudio/sparklyr/issues/81
+
+https://forums.databricks.com/questions/10251/how-to-count-number-of-missing-values-for-each-col.html
+
+https://github.com/awesome-spark/awesome-spark
+
+## Other:
+
+https://databricks.com/blog/2017/05/25/using-sparklyr-databricks.html
+
+http://www.cazena.com/rstudio
+
+https://www.ibm.com/developerworks/community/blogs/281605c9-7369-46dc-ad03-70d9ad377480/entry/Running_RStudio_in_IBM_Spectrum_Conductor_with_Spark_2_2_0_using_Sparklyr_and_Docker?lang=en
+
+http://datascience.ibm.com/blog/working-interactively-with-rstudio-and-notebooks-in-dsx-2/
+
+http://datascience.ibm.com/blog/access-ibm-analytics-for-apache-spark-from-rstudio/
