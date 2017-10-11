@@ -149,6 +149,8 @@ https://medium.com/@bkvarda/sparklyr-r-interface-for-spark-and-kerberos-on-cloud
 
 https://blog.cloudera.com/blog/2016/12/automating-your-sparklyr-environment-with-cloudera-director/
 
+https://github.com/rstudio/sparklyr/issues/1011
+
 ## H2O:
 
 https://cran.r-project.org/web/packages/rsparkling/rsparkling.pdf
